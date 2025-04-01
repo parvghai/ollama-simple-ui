@@ -1,0 +1,147 @@
+/* Styling for the entire body with a dark theme */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2C2F33; /* Dark background color */
+    color: #FFFFFF; /* White text color */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+/* Full-page Centering */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    text-align: center;
+}
+
+/* Button Container (Ensures Proper Centering) */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+/* Adjusted Home Page Button */
+#home-button {
+    background-color: #7289da !important; /* Purple */
+    color: white !important;
+    font-size: 28px; /* Reduced from 36px */
+    padding: 20px 40px; /* Smaller padding */
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+/* Hover Effect */
+#home-button:hover {
+    background-color: #5c6ca4 !important; /* Lighter purple */
+    transform: scale(1.05); /* Slightly smaller hover effect */
+}
+
+/* Click Effect */
+#home-button:active {
+    background-color: #5c6ca4 !important; /* Darker purple */
+    transform: scale(0.95);
+}
+
+
+
+/* Main container settings for layout and design */
+.container {
+    width: 50%;
+    margin: 100px auto; /* Center the container */
+    padding: 20px;
+    background-color: #23272A; /* Slightly darker background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+/* Heading styling */
+h1 {
+    font-size: 28px;
+    color: #FFFFFF;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Container for buttons */
+.button-container {
+    margin-top: 20px;
+}
+
+/* General button styling with hover effect */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #7289DA; /* Button background color */
+    margin: 10px;
+    transition: background 0.3s ease; /* Smooth background transition */
+}
+
+.btn:hover {
+    background-color: #5b6eae; /* Darker button background on hover */
+}
+
+/* Special button for developers with a unique background */
+.developer-btn {
+    background-color: #43B581; /* Green background for developer button */
+}
+
+.developer-btn:hover {
+    background-color: #369b6e; /* Darker green on hover */
+}
+
+/* Container for the homepage, centered vertically and horizontally */
+.home-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: center; /* Center horizontally and vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Start chat button styling */
+.start-chat {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #9147ff; /* Purple background */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Smooth background transition */
+}
+
+.start-chat:hover {
+    background-color: #7a33cc; /* Darker purple on hover */
+}
+
+/* Code block styling within chatbot bubbles */
+.bot-bubble pre {
+    background-color: #2b2d31; /* Dark background for code snippets */
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto; /* Allow horizontal scroll for long lines */
+    font-family: "Courier New", monospace; /* Monospace font for code */
+}
+
+/* Inline code styling */
+.bot-bubble code {
+    font-size: 14px;
+    white-space: pre-wrap; /* Preserve formatting and line breaks */
+}
