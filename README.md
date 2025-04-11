@@ -102,58 +102,22 @@ Ollama must be running as a server to serve the Flask application’s API reques
 
 ## Step 4: Run the Python Flask Application
 
-Clone the Repository
+We’ll use the prebuilt Flask application from the following GitHub repository:  
+🔗 **https://github.com/parvghai/ollama-simple-ui**
+
+#### Clone the Repository
+
 Open a terminal or command prompt and run:
 
 
 git clone https://github.com/parvghai/ollama-simple-ui.git
 cd ollama-simple-ui
-Set Up Python Environment
-
-Make sure Python 3.6+ is installed:
-
 
 python --version
-
-Create and activate a virtual environment (recommended):
-
-Windows:
-
-
-python -m venv venv
-venv\Scripts\activate
-Linux/macOS:
-
-
-python3 -m venv venv
-source venv/bin/activate
-Install Required Dependencies
-Run the following command inside the project directory:
-
-
 pip install -r requirements.txt
-Run the Flask Application
-Once dependencies are installed, start the Flask app:
-
 
 python app.py
-You should see:
 
-
-Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-Access the Chat Interface
-Open a browser and visit:
-👉 http://127.0.0.1:5000/chat
-
-Use the UI to:
-
-Send messages to the LLM
-
-Switch models via the dropdown
-
-Export chat history
-
-Note: The necessary templates (home.html, index.html) are already included in the repo under the templates/ directory.
 ---
 
 ## Troubleshooting
