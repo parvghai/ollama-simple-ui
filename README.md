@@ -110,13 +110,13 @@ We’ll use the prebuilt Flask application from the following GitHub repository:
 Open a terminal or command prompt and run:
 
 
-git clone https://github.com/parvghai/ollama-simple-ui.git
-cd ollama-simple-ui
+'git clone https://github.com/parvghai/ollama-simple-ui.git'
+'cd ollama-simple-ui'
 
-python --version
-pip install -r requirements.txt
+'python --version'
+'pip install -r requirements.txt'
 
-python app.py
+'python app.py'
 
 ---
 
