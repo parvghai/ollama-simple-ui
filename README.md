@@ -114,6 +114,8 @@ Open a terminal or command prompt and run:
 `cd ollama-simple-ui`
 
 `python --version`
+Install Required Dependencies
+Run the following command inside the project directory:
 `pip install -r requirements.txt`
 
 `python app.py`
