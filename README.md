@@ -62,9 +62,9 @@ Ollama allows you to download models from its library. We’ll pull the followin
 2. **Pull Models**:
    - Run these commands one by one:
      
-     ollama pull huihui_ai/deepseek-r1-abliterated:latest
-     ollama pull llama3
-     ollama pull command-r7b:latest
+     ollama pull huihui_ai/deepseek-r1-abliterated:latest:
+     ollama pull llama3:
+     ollama pull command-r7b:latest:
      
    - Each command downloads the specified model. The first run may take time depending on your internet speed.
 3. **Verify Models**:
