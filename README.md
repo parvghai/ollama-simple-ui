@@ -102,23 +102,74 @@ Ollama must be running as a server to serve the Flask application’s API reques
 
 ## Step 4: Run the Python Flask Application
 
+Here's the fully formatted version of **Step 4**, matching the **exact style and formatting** of your existing `README.md`:
+
+
+---
+
+## Step 4: Run the Python Flask Application
+
 We’ll use the prebuilt Flask application from the following GitHub repository:  
 🔗 **https://github.com/parvghai/ollama-simple-ui**
 
-#### Clone the Repository
+### Clone the Repository
+- Open a terminal or Command Prompt and run:
 
--Open a terminal or command prompt and run:
+  ```
+  git clone https://github.com/parvghai/ollama-simple-ui.git
+  cd ollama-simple-ui
+  ```
 
+### Set Up Python Environment
+- Ensure Python is installed:
 
-`git clone https://github.com/parvghai/ollama-simple-ui.git`
-`cd ollama-simple-ui`
+  ```
+  python --version
+  ```
 
-`python --version`
--Install Required Dependencies
--Run the following command inside the project directory:
-`pip install -r requirements.txt`
+- (Optional but recommended) Create and activate a virtual environment:
 
-`python app.py`
+  **Linux/macOS**:
+  ```
+  python -m venv venv
+  source venv/bin/activate
+  ```
+
+  **Windows**:
+  ```
+  python -m venv venv
+  venv\Scripts\activate
+  ```
+
+### Install Required Dependencies
+- Run the following command inside the project directory:
+
+  ```
+  pip install -r requirements.txt
+  ```
+
+### Run the Flask App
+- Start the Flask server:
+
+  ```
+  python app.py
+  ```
+
+- The app starts in debug mode on `http://127.0.0.1:5000` by default.
+
+- You’ll see output like:
+
+  ```
+  Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+  ```
+
+### Access the Chat Interface
+- Open a web browser and go to:  
+  `http://127.0.0.1:5000/chat`
+
+- Use the interface to send messages, switch models (via the dropdown), and export chat history.
+
+**Note**: The necessary templates (`home.html` and `index.html`) are already included in the `templates` folder in the cloned repository.
 
 ---
 
