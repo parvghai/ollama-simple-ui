@@ -102,43 +102,58 @@ Ollama must be running as a server to serve the Flask application’s API reques
 
 ## Step 4: Run the Python Flask Application
 
-Assuming you have the Flask application code saved as `app.py` (from your provided code), follow these steps:
+Clone the Repository
+Open a terminal or command prompt and run:
 
-1. **Set Up Python Environment**:
-   - Ensure Python is installed (`python --version` or `python3 --version`).
-   - Install required Python packages:
-     
-     pip install flask requests
-     
-   - If using a virtual environment (recommended):
-     
-     python -m venv venv
-     source venv/bin/activate  # Linux/macOS
-     venv\Scripts\activate     # Windows
-     pip install flask requests
-     
 
-2. **Save the Flask Code**:
-   - Copy your Flask code into a file named `app.py` in your working directory.
-   - Ensure it includes the routes for `/chat`, `/set_model`, and `/export`.
+git clone https://github.com/parvghai/ollama-simple-ui.git
+cd ollama-simple-ui
+Set Up Python Environment
 
-3. **Run the Flask App**:
-   - In a new terminal (with the virtual environment activated, if used), run:
-     
-     python app.py
-     
-   - The app starts in debug mode on `http://127.0.0.1:5000` by default.
-   - You’ll see output like:
-     
-     * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-     
+Make sure Python 3.6+ is installed:
 
-4. **Access the Chat Interface**:
-   - Open a web browser and go to `http://127.0.0.1:5000/chat`.
-   - Use the interface to send messages, switch models (via the dropdown), and export chat history.
 
-**Note**: Ensure `home.html` and `index.html` templates are in a `templates` folder in the same directory as `app.py`.
+python --version
 
+Create and activate a virtual environment (recommended):
+
+Windows:
+
+
+python -m venv venv
+venv\Scripts\activate
+Linux/macOS:
+
+
+python3 -m venv venv
+source venv/bin/activate
+Install Required Dependencies
+Run the following command inside the project directory:
+
+
+pip install -r requirements.txt
+Run the Flask Application
+Once dependencies are installed, start the Flask app:
+
+
+python app.py
+You should see:
+
+
+Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+Access the Chat Interface
+Open a browser and visit:
+👉 http://127.0.0.1:5000/chat
+
+Use the UI to:
+
+Send messages to the LLM
+
+Switch models via the dropdown
+
+Export chat history
+
+Note: The necessary templates (home.html, index.html) are already included in the repo under the templates/ directory.
 ---
 
 ## Troubleshooting
